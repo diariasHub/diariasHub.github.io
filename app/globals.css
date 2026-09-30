@@ -1,26 +1,67 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Colores del sitio: se definen una vez aquí y Tailwind los expone como clases
+   (bg-background, text-textMain, text-accent, border-line, bg-surface...) */
+@theme {
+  --color-background: var(--bg-primary);
+  --color-surface: var(--bg-surface);
+  --color-textMain: var(--text-primary);
+  --color-textMuted: var(--text-secondary);
+  --color-accent: var(--accent-color);
+  --color-onAccent: var(--on-accent);
+  --color-line: var(--line-color);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", "Cascadia Code", Menlo, Consolas, monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* Modo oscuro activado por clase (lo maneja next-themes) */
+@custom-variant dark (&:is(.dark *));
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --bg-primary: #F8F9FA;
+    --bg-surface: #FFFFFF;
+    --text-primary: #0A192F;
+    --text-secondary: #475569;
+    --accent-color: #2563EB;   /* Azul clínico */
+    --on-accent: #FFFFFF;
+    --line-color: rgba(10, 25, 47, 0.1);
   }
+
+  .dark {
+    --bg-primary: #0D1117;
+    --bg-surface: #161B22;
+    --text-primary: #E6EDF3;
+    --text-secondary: #8B949E;
+    --accent-color: #00FF87;   /* Verde signos vitales */
+    --on-accent: #0D1117;
+    --line-color: rgba(230, 237, 243, 0.1);
+  }
+
+  html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection { background: var(--accent-color); color: var(--on-accent); }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Línea de electrocardiograma del hero */
+@keyframes ecg-draw {
+  from { stroke-dashoffset: 1200; }
+  to   { stroke-dashoffset: 0; }
+}
+.ecg-line {
+  stroke-dasharray: 1200;
+  animation: ecg-draw 3.2s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .ecg-line { animation: none; stroke-dasharray: none; }
 }
