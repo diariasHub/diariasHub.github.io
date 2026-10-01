@@ -81,6 +81,20 @@ export const projects = [
     links: [{ label: 'Código', href: 'https://github.com/SolgreyDuocUC/EVT-Aplicacion-Despachos-DevOps', type: 'github' }],
   },
   {
+    title: 'Predicción de enfermedad cardíaca',
+    context: 'Duoc UC · Machine Learning · equipo de 2',
+    period: '2025',
+    description:
+      'Modelo de clasificación que estima el riesgo de enfermedad cardíaca a partir de 13 variables clínicas, siguiendo la metodología CRISP-DM.',
+    bullets: [
+      'Comparé Regresión Logística, SVM y Random Forest con GridSearchCV, priorizando el recall para no dejar enfermos sin detectar.',
+      'El modelo final (SVM) detecta 16 de 17 pacientes enfermos del set de prueba: recall 94 %, F1 0,87.',
+      'Formulario interactivo en Gradio para predecir nuevos casos.',
+    ],
+    tags: ['Python', 'scikit-learn', 'pandas', 'Jupyter', 'Gradio'],
+    links: [{ label: 'Notebook', href: 'https://github.com/diariasHub/ml-prediccion-enfermedad-cardiaca', type: 'github' }],
+  },
+  {
     title: 'Ficha Paciente',
     context: 'Proyecto personal',
     period: '2025',
@@ -164,7 +178,7 @@ export const certifications = [
 export const skills = [
   { group: 'Frontend', items: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'HTML5', 'CSS3', 'Bootstrap'] },
   { group: 'Backend', items: ['Node.js', 'Express', 'Java', 'Spring Boot', 'Python'] },
-  { group: 'Datos', items: ['PostgreSQL', 'MySQL', 'Oracle SQL', 'MongoDB', 'Firestore'] },
+  { group: 'Datos y ML', items: ['PostgreSQL', 'MySQL', 'Oracle SQL', 'MongoDB', 'Firestore', 'pandas', 'scikit-learn'] },
   { group: 'Cloud y DevOps', items: ['AWS', 'Docker', 'Terraform', 'GitHub Actions', 'Nginx', 'Linux'] },
   { group: 'Móvil y diseño', items: ['React Native', 'Kotlin', 'Android Studio', 'Figma', 'UX/UI'] },
 ];
