@@ -54,6 +54,23 @@ export const projects = [
     links: [{ label: 'Ver presentación', href: 'https://www.youtube.com/watch?v=W1KxsMEosPg', type: 'video' }],
   },
   {
+    title: 'Mis Lucas',
+    context: 'Proyecto personal · en uso diario',
+    period: 'oct 2026',
+    description:
+      'App de finanzas personales que reemplazó mis planillas Excel: controla gastos, créditos y ahorro mes a mes, y funciona sin internet en el teléfono y el computador.',
+    bullets: [
+      'PWA instalable con caché offline: lo que anoto sin señal se sincroniza solo al volver la conexión (Firestore con caché persistente).',
+      'Login con Google y reglas de seguridad por usuario en Firestore.',
+      'Lógica de cálculo separada y cubierta con pruebas unitarias; CI/CD con GitHub Actions que prueba, compila y publica en GitHub Pages.',
+    ],
+    tags: ['React', 'TypeScript', 'Vite', 'Firebase', 'PWA', 'Vitest', 'GitHub Actions'],
+    links: [
+      { label: 'Demo', href: 'https://diariashub.github.io/mis-lucas/', type: 'demo' },
+      { label: 'Código', href: 'https://github.com/diariasHub/mis-lucas', type: 'github' },
+    ],
+  },
+  {
     title: 'RedNorte',
     context: 'Duoc UC · equipo de 4',
     period: '2026',
