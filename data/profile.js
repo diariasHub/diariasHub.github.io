@@ -25,6 +25,8 @@ export const profile = {
 export const projects = [
   {
     title: 'Sistema de Gestión de Pautas IAAS',
+    image: '/proyectos/pautas-iaas.jpg',
+    imageAlt: 'Capturas del Sistema de Pautas IAAS: menú principal y dashboard de cumplimiento por servicio',
     context: 'Proyecto de práctica · CITT Duoc UC × Clínica Miraflores',
     period: 'ago – nov 2025',
     featured: true,
@@ -41,6 +43,8 @@ export const projects = [
   },
   {
     title: 'Felicy',
+    image: '/proyectos/felicy.jpg',
+    imageAlt: 'Portada de Felicy: brazalete con monitoreo de pulso y conversación del asistente de voz con el paciente',
     context: '1er lugar · Hackatón Duoc UC Valparaíso',
     period: 'jun 2026',
     featured: true,
@@ -55,6 +59,8 @@ export const projects = [
   },
   {
     title: 'Mis Lucas',
+    image: '/proyectos/mis-lucas.jpg',
+    imageAlt: 'Mis Lucas en escritorio y teléfono, con datos de ejemplo',
     context: 'Proyecto personal · en uso diario',
     period: 'oct 2026',
     description:
@@ -72,6 +78,8 @@ export const projects = [
   },
   {
     title: 'RedNorte',
+    image: '/proyectos/rednorte.jpg',
+    imageAlt: 'Diagrama de arquitectura de RedNorte: API Gateway, microservicios, servidor FHIR, PostgreSQL y AWS',
     context: 'Duoc UC · equipo de 4',
     period: '2026',
     description:
@@ -86,6 +94,8 @@ export const projects = [
   },
   {
     title: 'EVT: Despachos y Ventas',
+    image: '/proyectos/evt-despachos.jpg',
+    imageAlt: 'Diagrama de arquitectura de EVT: balanceador AWS, contenedores en ECS, MySQL en RDS y Terraform',
     context: 'Duoc UC · DevOps',
     period: '2026',
     description:
@@ -99,6 +109,8 @@ export const projects = [
   },
   {
     title: 'Predicción de enfermedad cardíaca',
+    image: '/proyectos/ml-cardiaca.jpg',
+    imageAlt: 'Resumen del modelo de predicción cardíaca: SVM elegido, recall 94 % y F1 0,87',
     context: 'Duoc UC · Machine Learning · equipo de 2',
     period: '2025',
     description:
@@ -113,6 +125,8 @@ export const projects = [
   },
   {
     title: 'Ficha Paciente',
+    image: '/proyectos/ficha-paciente.jpg',
+    imageAlt: 'Portada de Ficha Paciente: esquema de la ficha con consultas, alergias, insumos e historial',
     context: 'Proyecto personal',
     period: '2025',
     description:
@@ -126,6 +140,8 @@ export const projects = [
   },
   {
     title: 'Electsol',
+    image: '/proyectos/electsol.jpg',
+    imageAlt: 'Página de inicio del sitio de Elecsol, empresa de servicios eléctricos',
     context: 'Cliente de Digitalizap',
     period: '2024',
     description: 'Landing para una empresa de servicios eléctricos, desde la propuesta visual hasta la publicación.',
