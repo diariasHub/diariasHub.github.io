@@ -4,7 +4,7 @@ import { GithubIcon } from './Icons';
 const linkIcon = { github: GithubIcon, video: PlayCircle, demo: ArrowUpRight };
 
 export default function ProjectCard({ project }) {
-  const { title, context, period, description, bullets = [], tags = [], links = [], note, featured } = project;
+  const { title, context, period, description, bullets = [], tags = [], links = [], note, featured, image, imageAlt } = project;
 
   return (
     <article
@@ -12,6 +12,18 @@ export default function ProjectCard({ project }) {
         featured ? 'lg:p-8' : ''
       }`}
     >
+      {image && (
+        <div className={`-mx-6 -mt-6 sm:-mx-7 sm:-mt-7 ${featured ? 'lg:-mx-8 lg:-mt-8' : ''} mb-6 aspect-video overflow-hidden rounded-t-xl border-b border-line bg-background`}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={image}
+            alt={imageAlt || `Imagen del proyecto ${title}`}
+            loading="lazy"
+            className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+          />
+        </div>
+      )}
+
       <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
         <span className="text-accent">{context}</span>
         <span className="text-textMuted">{period}</span>
