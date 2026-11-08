@@ -205,6 +205,9 @@ export const education = [
 ];
 
 export const certifications = [
+  'Scrum Fundamentals Certified (SFC™) · SCRUMstudy (2026)',
+  'Scrum for Operations & DevOps Fundamentals Certified (SODFC) · SCRUMstudy (2026)',
+  'Kanban Essentials Certified (KEC) · Kanbanstudy (2026)',
   'JavaScript · Cisco Networking Academy (en curso)',
   'Primeros Auxilios Psicológicos · IST',
   'Acceso y estabilización de víctimas en rescate (36 h) · Fénix Team',
