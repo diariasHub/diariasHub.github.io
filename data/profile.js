@@ -59,6 +59,8 @@ export const projects = [
   },
   {
     title: 'WC3 Survivors',
+    image: '/proyectos/wc3-survivors.jpg',
+    imageAlt: 'Menú principal de WC3 Survivors con la selección de héroes junto al mapa del juego en vista isométrica',
     context: 'Proyecto personal · juego web 3D (fan, gratuito y sin fines de lucro)',
     period: '2026 · beta',
     description:
