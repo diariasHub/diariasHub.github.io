@@ -58,6 +58,21 @@ export const projects = [
     links: [{ label: 'Ver presentación', href: 'https://www.youtube.com/watch?v=W1KxsMEosPg', type: 'video' }],
   },
   {
+    title: 'WC3 Survivors',
+    context: 'Proyecto personal · juego web 3D (fan, gratuito y sin fines de lucro)',
+    period: '2026 · beta',
+    description:
+      'Juego de supervivencia estilo "survivors" para navegador y móvil, inspirado en Warcraft III: 16 héroes, combinación de objetos por niveles hasta legendarios, tienda, refugio con cofre y progreso persistente. Publicado con dominio propio y en beta abierta.',
+    bullets: [
+      'Motor de juego en JavaScript puro con Three.js: vista isométrica 3D, modelos animados por esqueleto y carga de recursos por paquetes según el mundo.',
+      'Ranking mundial semanal con Supabase protegido con reglas de seguridad; partidas guardadas en el navegador y exportables por código.',
+      'Desplegado en Cloudflare con dominio propio, wiki estática generada por script y versionado de parches para la comunidad.',
+    ],
+    tags: ['JavaScript', 'Three.js', 'Supabase', 'Cloudflare', 'Game dev'],
+    links: [{ label: 'Jugar en wc3survival.org', href: 'https://wc3survival.org', type: 'demo' }],
+    note: 'Proyecto fan sin relación con Blizzard; los recursos de Warcraft III pertenecen a Blizzard Entertainment.',
+  },
+  {
     title: 'Mis Lucas',
     image: '/proyectos/mis-lucas.jpg',
     imageAlt: 'Mis Lucas en escritorio y teléfono, con datos de ejemplo',
